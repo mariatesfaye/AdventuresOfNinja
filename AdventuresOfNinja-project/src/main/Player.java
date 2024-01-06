@@ -140,5 +140,6 @@ public class Player extends Character{
 //        g.drawRect(x - halfWidth, y - halfHeight, 2*halfWidth, 2*halfHeight); //for development only
 		g.drawImage(imageToBeDrawn, x - halfWidth, y - halfHeight, 2*halfWidth, 2*halfHeight, null);
 	}
+	
 }
 
