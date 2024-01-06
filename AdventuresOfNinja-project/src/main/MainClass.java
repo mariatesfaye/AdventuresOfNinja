@@ -20,5 +20,6 @@ class MainClass{
         new Game();
 
     }
+    
 }
 
