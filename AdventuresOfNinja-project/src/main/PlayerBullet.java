@@ -18,4 +18,5 @@ public class PlayerBullet extends AttackObject{
     public void update(){
         this.x += 15;
     }
+	
 }
