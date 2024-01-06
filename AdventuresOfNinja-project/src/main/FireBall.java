@@ -18,4 +18,5 @@ public class FireBall extends AttackObject{
     public void update(){
         this.x -= 10;
     }
+	
 }
