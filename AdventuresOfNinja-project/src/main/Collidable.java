@@ -35,7 +35,7 @@ public abstract class Collidable {
 	return xTooClose && yTooClose;
   }
 
-    //all collidables move and are painted
+    //all collidables move and are actually painted
     public abstract void update();
 	public abstract void draw(Graphics2D g);
 
