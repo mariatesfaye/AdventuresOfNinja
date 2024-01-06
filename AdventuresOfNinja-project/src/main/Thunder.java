@@ -25,6 +25,7 @@ public class Thunder extends AttackObject{
       }catch(Exception e) {
         e.printStackTrace();
       }
+	    
     }
 
     public void draw(Graphics2D g){
@@ -57,6 +58,4 @@ public class Thunder extends AttackObject{
             return false;
         }
     }
-
-
 }
