@@ -4,6 +4,7 @@ import java.awt.image.BufferedImage;
 
 import javax.imageio.ImageIO;
 
+
 public class FlyingMinion extends AttackObject{
     double angle = Math.random();
     long birthTime = System.currentTimeMillis();
