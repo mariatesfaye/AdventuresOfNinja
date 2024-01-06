@@ -69,7 +69,6 @@ public class Boss extends Character {
     }
 
      
-
     private void makeAPhase1Act(){
         double randomNumber = Math.random();
         
@@ -162,6 +161,5 @@ public class Boss extends Character {
         int topGapFromEdge = groundY + 30; 
         super.drawHealthBar(g, leftGapFromEdge, topGapFromEdge, barWidth, barHeight);
     }
-
 
 }
