@@ -9,6 +9,7 @@ public abstract class AttackObject extends Collidable {
 	    AttackObject (int x, int y, int halfWidth, int halfHeight){
 	        super(x, y, halfWidth, halfHeight);
 	    }
+	
 	    protected void setImage(BufferedImage image){
 	        this.image = image;
 	    }
