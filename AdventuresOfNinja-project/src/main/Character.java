@@ -15,7 +15,7 @@ public abstract class Character extends Collidable{
     long lastShootTime = 0;
 	
 	public Character(int[] xyPosition, int[] halfWidthHeight, int health, GamePanel gp){
-        //x, y, halfWidth, halfHeight are declared in collidable
+        //x, y, halfWidth, halfHeight are declared in a collidable
 		super(xyPosition[0], xyPosition[1], halfWidthHeight[0], halfWidthHeight[1]);
 
         this.groundY = gp.getGroundY();
@@ -73,7 +73,7 @@ public abstract class Character extends Collidable{
 
         boolean belowGround = y + halfHeight > groundY;
         if (belowGround){
-            //make sure nobody sinks below the ground
+            // make sure nobody sinks below the ground
             downSpeed = 0;
             y = groundY - halfHeight;
         }
@@ -105,7 +105,5 @@ public abstract class Character extends Collidable{
     }
     
     public abstract void shoot();
-//    protected abstract void drawHealthBar(Graphics2D g);
-
 
 }
