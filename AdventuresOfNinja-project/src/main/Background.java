@@ -32,7 +32,6 @@ public class Background {
 	  public void draw(Graphics2D g2) {
 		  
 		g2.drawImage(mountain, 0, 0,768, 576, null);
-		  
 		g2.setColor(Color.GREEN);
 
 		g2.fillRect( 0, groundY, 420, 320 );
