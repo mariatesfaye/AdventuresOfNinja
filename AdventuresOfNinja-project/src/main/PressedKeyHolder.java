@@ -10,6 +10,7 @@ public class PressedKeyHolder implements KeyListener{
 	  public PressedKeyHolder(GamePanel gp) {
 		  this.gp = gp;
 	  }
+	
 
 	  @Override
 	  public void keyTyped(KeyEvent e) {}
@@ -17,7 +18,7 @@ public class PressedKeyHolder implements KeyListener{
 	  @Override 
 	  public void keyPressed(KeyEvent e) {
 	    int keyCode = e.getKeyCode();
-	    //operations to be done on title screen
+	    //operations to be done on the title screen
 	    if(gp.currentState == gp.titleState) {
 	       	if (keyCode == KeyEvent.VK_UP) {
 	           	gp.menuCommand --;
@@ -32,6 +33,7 @@ public class PressedKeyHolder implements KeyListener{
 	           	}
 
 	           }
+		    
 	       	if (keyCode == KeyEvent.VK_ENTER) {
 	       		if (gp.menuCommand == 0) { 
 	       			gp.stopMusic();
@@ -44,6 +46,7 @@ public class PressedKeyHolder implements KeyListener{
 	       		}
 	       	}
 	       }
+		  
 	    if (gp.currentState == gp.playingState) {
 	    	if(keyCode == KeyEvent.VK_A) leftPress = true;
 	        if (keyCode == KeyEvent.VK_W) upPress = true;
@@ -118,8 +121,7 @@ public class PressedKeyHolder implements KeyListener{
 	       		}
 	       	}
 	       }
-	   
-	    
+	     
 	  }
 	  @Override
 	  public void keyReleased(KeyEvent e) {
@@ -130,4 +132,5 @@ public class PressedKeyHolder implements KeyListener{
 	    if(keyCode == KeyEvent.VK_S) downPress = false;
 	    if(keyCode == KeyEvent.VK_SPACE) spacePress = false;  
 	  } 
+	
 }
