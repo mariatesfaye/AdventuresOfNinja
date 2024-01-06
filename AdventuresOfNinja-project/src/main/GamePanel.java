@@ -148,9 +148,7 @@ public class GamePanel extends JPanel implements Runnable{
 		    if (boss.isAlive() == false) {
 		    	currentState = playerWinsState;
 		    }
-		   
-
-			
+		   	
 		}
 		if (currentState == pauseState) {
 			//Do nothing since we are paused
